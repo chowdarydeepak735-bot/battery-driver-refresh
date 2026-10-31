@@ -1,23 +1,19 @@
 # Battery Driver Refresh
 
-A safety-first GitHub Pages guide for checking and refreshing Windows battery-device drivers.
+Documentation and troubleshooting notes for Windows battery-device drivers.
 
-## View the site
-After GitHub Pages is enabled, the site should be available at:
-https://chowdarydeepak735-bot.github.io/battery-driver-refresh/
+## Contents
+- [Installation and refresh instructions](docs/INSTALLATION.md)
+- [Safety rules and troubleshooting](docs/SAFETY-AND-TROUBLESHOOTING.md)
 
-## Enable GitHub Pages
-1. Open this repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main** and folder **/(root)**.
-5. Click **Save** and wait for the deployment to finish.
+## Purpose
+This repository documents safe ways to check and refresh the built-in Windows battery devices:
+- Microsoft ACPI-Compliant Control Method Battery
+- Microsoft AC Adapter
 
-## Safety
-- Prefer Device Manager over scripted device removal.
-- Do not disable UAC or automate UAC approval.
-- Do not force-remove protected system devices or delete driver-store packages.
-- Windows may reinstall built-in devices after a restart.
-- If Windows says **Access is denied**, stop and use the laptop manufacturer's support instructions.
+This repository contains documentation only. It is not an installer and does not provide an automated driver-removal script.
 
-This project is an independent guide and is not affiliated with Microsoft.
+## Important
+Prefer Device Manager. Do not disable User Account Control (UAC), automate approval of UAC prompts, force-remove protected devices, or delete driver-store packages. Windows may reinstall built-in devices after restart.
+
+Independent community documentation; not affiliated with Microsoft or any laptop manufacturer.
